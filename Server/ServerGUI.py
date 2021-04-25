@@ -10,7 +10,7 @@ import threading
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtWidgets import QMessageBox, QWidget
-from testServer import Server as CreateServer
+from ServerSocket import Server as CreateServer
 
 from chatWindow import MyTableWidget
 

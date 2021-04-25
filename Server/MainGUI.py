@@ -10,12 +10,9 @@
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 
-from Client1 import Ui_Form as Client1
+from ClientGUI import Ui_Form as Client1
 from PyQt5.QtWidgets import QMessageBox, QMainWindow, QApplication, QWidget
-from Server1 import Ui_Form as Server1
-
-from testServer import Server
-
+from ServerGUI import Ui_Form as Server1
 import sys
 
 

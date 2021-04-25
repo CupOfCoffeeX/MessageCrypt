@@ -4,7 +4,7 @@ from PyQt5.QtWidgets import QMainWindow, QApplication
 from PyQt5.QtWidgets import QMessageBox
 
 
-from Main import Ui_MainWindow
+from MainGUI import Ui_MainWindow
 
 class Window(QMainWindow):
     def __init__(self):

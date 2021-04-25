@@ -4,8 +4,8 @@ import socket
 import threading
 import time
 # notre programme de chiffrement rsa
-import RSA_CryptoChat
-import AES_GitHub
+import RSA_Cipher
+import AES_Cipher
 
 class Server:
     """classe concernant la fenêtre de chat, socket, réseau"""
@@ -30,12 +30,12 @@ class Server:
         self.compteurPseudoList = 0
 
         # attributs liés au chiffrement RSA
-        self.rsa = RSA_CryptoChat.RSAChiffrement()
+        self.rsa = RSA_Cipher.RSAChiffrement()
         self.publicKeyRSA, self.privateKeyRSA = self.rsa.generateKeys()
 
 
         # attributs liés au chiffrement AES
-        self.aes = AES_GitHub.AESChiffrement()
+        self.aes = AES_Cipher.AESChiffrement()
         self.AesKey = {}
         self.compteurAesKey = 0
 
