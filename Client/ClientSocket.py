@@ -4,8 +4,8 @@ from hashlib import md5
 
 import socket
 import threading
-import RSA_CryptoChat
-import AES_GitHub
+import RSA_Cipher
+import AES_Cipher
 
 
 class Client:
@@ -18,11 +18,11 @@ class Client:
         self.pseudo = pseudo
 
         # attributs liés au chiffrement RSA
-        self.rsa = RSA_CryptoChat.RSAChiffrement()
+        self.rsa = RSA_Cipher.RSAChiffrement()
         self.RsaPublicKey = None
 
         # attributs liés au chiffrement AES
-        self.aes = AES_GitHub.AESChiffrement()
+        self.aes = AES_Cipher.AESChiffrement()
         self.AesKey = None
 
 

@@ -10,13 +10,10 @@
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 
-from Client1 import Ui_Form as Client1
+from ClientGUI import Ui_Form as Client1
 from PyQt5.QtWidgets import QMessageBox, QMainWindow, QApplication, QWidget
-from Server1 import Ui_Form as Server1
+from ServerGUI import Ui_Form as Server1
 
-from testServer import Server
-
-import sys
 
 
 class Ui_MainWindow(QWidget):
@@ -26,6 +23,7 @@ class Ui_MainWindow(QWidget):
         print('init secondMainWindow')
 
     def setupUi(self, MainWindow):
+        """fonction de set up de la fenêtre"""
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(687, 382)
         self.centralwidget = QtWidgets.QWidget(MainWindow)
@@ -87,10 +85,12 @@ class Ui_MainWindow(QWidget):
 
 
     def openClient(self):
+        """lancement du client"""
         self.Client.show()
         self.MainWindow.hide()
 
     def openServer(self):
+        """lancement du serveur"""
         self.Server.show()
         self.MainWindow.hide()
 

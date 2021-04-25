@@ -12,8 +12,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtWidgets import QWidget, QMessageBox, QApplication
 from chatWindow import MyTableWidget
 
-from testClient import Client as CreateClient
-import sys
+from ClientSocket import Client as CreateClient
 import threading
 
 
